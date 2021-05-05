@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Test Class Mahasiswa",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew test --tests MahasiswaTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "Test Class Main",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew test --tests MainTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Test Run App 1",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew runMain",
+      "input": "Chiko\r\n82612\r\n23",
+      "output": "Chiko 82612 (23 tahun)",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test Run App 2",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew runMain",
+      "input": "Noob\r\nXA8291\r\n19",
+      "output": "Noob XA8291 (19 tahun)",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test Run App 3",
+      "setup": "chmod +x gradlew",
+      "run": "./gradlew runMain",
+      "input": "Tysua8s\r\nf298f29\r\n45",
+      "output": "Tysua8s f298f29 (45 tahun)",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}

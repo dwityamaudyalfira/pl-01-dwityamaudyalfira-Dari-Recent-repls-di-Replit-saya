@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.affandes.kuliah.pl'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+
+task runMain(type: JavaExec) {
+    group = "Execution"
+    description = "Run Main"
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'com.github.affandes.kuliah.pl.pl01.Main'
+    standardInput = System.in
+}
